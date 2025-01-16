@@ -18,6 +18,11 @@ public class lerpdemo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        t += Time.deltaTime;
+        if (t > 1)
+        {
+            t = 0;
+        }
         //transform.position = Vector2.one * Mathf.Lerp(-2, 4, t);
         transform.position = Vector2.Lerp(start.position, end.position, curve.Evaluate(t));
     }
