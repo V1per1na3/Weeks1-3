@@ -5,6 +5,7 @@ using UnityEngine;
 public class solar : MonoBehaviour
 {
     public float speed = 5;
+    public float showingup = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +16,6 @@ public class solar : MonoBehaviour
     void Update()
     {
         transform.Rotate(0, 0, speed * Time.deltaTime);
+        
     }
 }
