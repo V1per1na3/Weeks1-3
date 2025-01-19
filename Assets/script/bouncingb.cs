@@ -26,8 +26,12 @@ public class bouncingb : MonoBehaviour
         Vector2 ballinscreenspace = Camera.main.WorldToScreenPoint(pos);
         if (ballinscreenspace.y <= 0)//check if ball hits the ground
         {
-            bSpeed = bSpeed * -0.9f;//decrease speed every time ball hits the ground
+            bSpeed = bSpeed * -0.95f;//decrease speed every time ball hits the ground
             ballinscreenspace.y = 0;
+        }
+        if (ballinscreenspace.x >= Screen.width)
+        {
+            pos.x = -10;
         }
         transform.position = pos;
 
