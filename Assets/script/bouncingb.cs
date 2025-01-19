@@ -20,14 +20,14 @@ public class bouncingb : MonoBehaviour
     {
         Vector2 pos = transform.position;
 
-        pos.y -= Time.deltaTime * bSpeed;
-        pos.x += Time.deltaTime* 1.5f;
-        bSpeed += grav;
+        pos.y -= Time.deltaTime * bSpeed;//move in y axis
+        pos.x += Time.deltaTime* 1.5f;//move in x axis
+        bSpeed += grav;//update speed
         Vector2 ballinscreenspace = Camera.main.WorldToScreenPoint(pos);
-        if (ballinscreenspace.y < 0 || ballinscreenspace.y > Screen.height)
+        if (ballinscreenspace.y <= 0)//check if ball hits the ground
         {
-            bSpeed = bSpeed * -0.9f;
-            ballinscreenspace.y = Screen.height;
+            bSpeed = bSpeed * -0.9f;//decrease speed every time ball hits the ground
+            ballinscreenspace.y = 0;
         }
         transform.position = pos;
 
