@@ -399,6 +399,7 @@ GameObject:
   - component: {fileID: 687927558}
   - component: {fileID: 687927557}
   - component: {fileID: 687927559}
+  - component: {fileID: 687927560}
   m_Layer: 0
   m_Name: chaser
   m_TagString: Untagged
@@ -485,7 +486,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 546d17b2aab63da48bb2cadaa2693600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mousepos: {x: 0, y: 0}
+--- !u!114 &687927560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687927556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e49e69b2bee93241b694fddaf58027c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &740130850
 GameObject:
   m_ObjectHideFlags: 0

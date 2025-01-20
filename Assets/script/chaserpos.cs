@@ -21,6 +21,7 @@ public class chaserpos : MonoBehaviour
 
             transform.position = mousepos;
 
-        }  
+        }
+        
     }
 }
