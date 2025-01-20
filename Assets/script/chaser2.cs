@@ -6,7 +6,7 @@ public class chaser2 : MonoBehaviour
 
 {
     Vector2 mousepos;
-    float dir = 0.5f;
+    float dis = 0.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,7 @@ public class chaser2 : MonoBehaviour
         Vector2 pos = transform.position;
         Vector2 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         
-        if (Vector2.Distance(mousepos,pos)<= dir)
+        if (Vector2.Distance(mousepos,pos)<= dis)
         {
             transform.position = new Vector2(Random.Range(-9, 10), Random.Range(-4, 4));
 
