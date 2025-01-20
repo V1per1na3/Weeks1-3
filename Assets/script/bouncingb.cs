@@ -38,20 +38,20 @@ public class bouncingb : MonoBehaviour
             pos = Vector2.zero;
          
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             runspeed += 0.2f;
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             runspeed -= 0.2f;
         }
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.PageUp))
         {
             bsize.x +=0.5f;
             bsize.y += 0.5f;
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             bsize.x -= 0.5f;
             bsize.y -= 0.5f;
