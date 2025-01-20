@@ -23,7 +23,9 @@ public class marchDown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Vector2 pos = Vector2.Lerp(start.position, end.position, curve.Evaluate(t));
+     
+
         t +=Time.deltaTime*0.2f*dir;
         if (t > 1)
         {
@@ -37,7 +39,7 @@ public class marchDown : MonoBehaviour
             dir = 1;
             yoffset -= 1;
         }
-        Vector2 pos = Vector2.Lerp(start.position, end.position, curve.Evaluate(t));
+
         pos.y += yoffset;
 
         transform.position = pos;

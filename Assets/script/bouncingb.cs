@@ -23,10 +23,10 @@ public class bouncingb : MonoBehaviour
         pos.x += Time.deltaTime* runspeed;//move in x axis
         bSpeed += grav;//update speed
         Vector2 ballinscreenspace = Camera.main.WorldToScreenPoint(pos);
-        if (ballinscreenspace.y <= 0)//check if ball hits the ground
+        if (ballinscreenspace.y < 0)//check if ball hits the ground
         {
             bSpeed = bSpeed * -0.95f;//decrease speed every time ball hits the ground
-            ballinscreenspace.y = 0;
+            
         }
         if (ballinscreenspace.x >= Screen.width)
         {
