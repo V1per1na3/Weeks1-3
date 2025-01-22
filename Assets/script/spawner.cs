@@ -17,9 +17,10 @@ public class spawner : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Vector2 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Instantiate(prefab, mouse, Quaternion.identity);
+            GameObject newThing = Instantiate(prefab, mouse, Quaternion.identity);
             //Instantiate(prefab, transform);//clone becomes the children of the spawner
 
+            Destroy(newThing, 5);
         }
     }
 }
