@@ -5,11 +5,28 @@ using UnityEngine;
 public class spawnthing : MonoBehaviour
 {
     public float speed = 1f;
+    public SpriteRenderer spriteRenderer;
+    public Sprite[] sprite;
+    int sortOrder = 0;
+ 
     // Start is called before the first frame update
     void Start()
     {
         //Destroy(gameObject,5);
+        //spriteRenderer.color = Random.ColorHSV();
+        if (sprite.Length == 0)
+        {
+
+        }
+        else
+        {
+            spriteRenderer.sprite = sprite[Random.Range(0,sprite.Length)];
+            spriteRenderer.sortingOrder = sortOrder++;//not working?
+
+
+}
         
+
     }
 
     // Update is called once per frame
