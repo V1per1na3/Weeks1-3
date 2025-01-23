@@ -122,6 +122,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &56501299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 56501301}
+  - component: {fileID: 56501300}
+  m_Layer: 0
+  m_Name: spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &56501300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56501299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf16fb3a96afdc45b6d4c323613c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 8167792595341842070, guid: 0a8ee13baf041fa4ea9ac7c90374c6e6, type: 3}
+  spawnedThings: []
+--- !u!4 &56501301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56501299}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.8440032, y: -0.43111116, z: -0.0641473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &660924253
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,6 +438,7 @@ GameObject:
   m_Component:
   - component: {fileID: 929991612}
   - component: {fileID: 929991611}
+  - component: {fileID: 929991613}
   m_Layer: 0
   m_Name: startpoint
   m_TagString: Untagged
@@ -466,6 +513,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &929991613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929991610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d5dc669d50f5540a9b647cd599eff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  spriteRenderer: {fileID: 0}
+  sprite: []
+  thingthatspawnedme: {fileID: 0}
 --- !u!1 &1670005906
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,3 +763,4 @@ SceneRoots:
   - {fileID: 1670005909}
   - {fileID: 929991612}
   - {fileID: 674962590}
+  - {fileID: 56501301}

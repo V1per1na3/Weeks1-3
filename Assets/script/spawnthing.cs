@@ -7,7 +7,9 @@ public class spawnthing : MonoBehaviour
     public float speed = 1f;
     public SpriteRenderer spriteRenderer;
     public Sprite[] sprite;
+    public spawner thingthatspawnedme;
     int sortOrder = 0;
+
  
     // Start is called before the first frame update
     void Start()
