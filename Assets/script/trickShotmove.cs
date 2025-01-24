@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
@@ -9,27 +10,22 @@ public class trickShotmove : MonoBehaviour
 {
     public AnimationCurve curve;
     public float Xspeed = 5f;
-    public float Yspeed = 5f;
-    public Transform start;
-    public Transform end;
-    float timer = 0;
-
-
-    [Range(0, 1)]
+    public bool ispressing = false;
+    [Range(0,1)]
     public float t;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        t = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
         moveTheStuff();
-        jump();
-        
+
+        Debug.Log(t);
 
 
     }
@@ -52,25 +48,27 @@ public class trickShotmove : MonoBehaviour
             Xspeed = Xspeed * -1;
         }
 
-        transform.position = pos;
-    }
-    void jump()
-    {
-  
+
+
         if (Input.GetKey(KeyCode.Space))
         {
-            timer ++;
-            t = timer*Time.deltaTime;
-            if (t >1)
-            {
-                timer = 0;
-                
-            }
-            transform.position = Vector2.Lerp(start.position, end.position, curve.Evaluate(t));
-
+            ispressing = true;
         }
+        if (ispressing)
+        {
+            t += Time.deltaTime;
+            if (t > 1)
+            {
+                t = 0;
+                ispressing = false;
+            }
+            
+        }
+        pos.y = Vector2.one.y * curve.Evaluate(t);
+        transform.position = pos;
 
 
     }
+    
 
 }
