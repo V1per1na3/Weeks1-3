@@ -282,7 +282,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2143742861}
@@ -2020,7 +2020,7 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: -0.7
+      value: -3
       inSlope: 7.208639
       outSlope: 7.208639
       tangentMode: 0
@@ -2028,17 +2028,17 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.05622128
     - serializedVersion: 3
-      time: 0.49763614
-      value: 0.5025385
-      inSlope: 0.011370778
-      outSlope: 0.011370778
+      time: 0.4967206
+      value: -1.4289703
+      inSlope: 0.020608902
+      outSlope: 0.020608902
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: -0.7
+      value: -3
       inSlope: -6.894197
       outSlope: -6.894197
       tangentMode: 0
@@ -2053,7 +2053,7 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: -0.76
+      value: -3
       inSlope: 18.841908
       outSlope: 18.841908
       tangentMode: 0
@@ -2061,8 +2061,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.13764684
     - serializedVersion: 3
-      time: 0.5026256
-      value: 2.962193
+      time: 0.5003673
+      value: 0.86191607
       inSlope: -1.3749477
       outSlope: -1.3749477
       tangentMode: 0
@@ -2071,7 +2071,7 @@ MonoBehaviour:
       outWeight: 0.17068915
     - serializedVersion: 3
       time: 0.7626343
-      value: -0.76
+      value: -3
       inSlope: -31.027353
       outSlope: -31.027353
       tangentMode: 0
@@ -2129,8 +2129,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.7311321, b: 0.7311321, a: 1}
+  m_Sprite: {fileID: 21300000, guid: d009a6b095084a54e844abdf5866191e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2149,8 +2149,8 @@ Transform:
   m_GameObject: {fileID: 2143742858}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.76, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.88, y: -3, z: 0}
+  m_LocalScale: {x: 0.6324, y: 0.6324, z: 0.6324}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 330302193}
