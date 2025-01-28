@@ -12,6 +12,7 @@ public class alarmBotMovement : MonoBehaviour
     public float explodeSpeed = 0.5f;
     public bool jump = false;
     public bool explode = false;
+    float dir = 0.6f;
     float currentx;
     float currenty;
     float jumpy;
@@ -28,6 +29,7 @@ public class alarmBotMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        transform.localScale = new Vector2(dir, 0.6f);
         Vector2 pos = transform.position;
 
         if (Input.GetKey(KeyCode.Space))// jump when hit space bar
@@ -74,11 +76,13 @@ public class alarmBotMovement : MonoBehaviour
             {
                 Vector2 fixpos = new Vector2(0, 0);
                 Xspeed = Xspeed * -1;//reverse dir if hit boundary
+                dir = 0.6f;
             }
             if (screenpos.x > Screen.width)
             {
                 Vector2 fixpos = new Vector2(Screen.width, 0);
                 Xspeed = Xspeed * -1;//reverse dir if hit boundary
+                dir = -0.6f;
             }
         }
 
